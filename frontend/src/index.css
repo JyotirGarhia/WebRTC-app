@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer components {
+  .videos-container video {
+    @apply w-[400px] h-[300px] bg-[#2c2c2c] border-2 border-[#555]
+           rounded-lg object-cover;
+  }
+  .controls-container button {
+    @apply px-5 py-2.5 text-base cursor-pointer bg-[#007bff] text-white border-none rounded-md transition-colors duration-200
+  }
+  .controls-container button:hover {
+    @apply bg-[#0056b3]
+  }
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
