@@ -12,7 +12,7 @@ export function initWebSocketServer(server: Server) {
         verifyClient: (info, done) => {
             const origin = info.origin;
     
-            if (allowedOrigins.includes(origin)) {
+            if (origin && allowedOrigins.includes(origin)) {
                 done(true);
             } else {
                 done(false, 403,"Forbidden");
