@@ -1,9 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
 
 const HomePage = () => {
   const navigate = useNavigate();
-  const [roomId, setRoomId] = useState("");
 
   return (
     <div className="flex flex-col items-center gap-4 p-10">
@@ -17,7 +15,7 @@ const HomePage = () => {
 
       <button
         className="px-4 py-2 bg-green-500 text-white rounded"
-        onClick={() => navigate(`/prejoin?mode=join&roomId=${roomId}`)}
+        onClick={() => navigate(`/prejoin?mode=join`)}
       >
         Join Room
       </button>
