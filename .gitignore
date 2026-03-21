@@ -8,3 +8,5 @@ backend/.env
 
 dist/
 build/
+
+*.tsbuildinfo

@@ -1,1 +1,0 @@
-{"root":["./src/app.ts","./src/index.ts","./src/config/cors.ts","./src/ws/cleanup.ts","./src/ws/handlers.ts","./src/ws/index.ts","./src/ws/rooms.ts","./src/ws/types.ts"],"version":"5.9.3"}
