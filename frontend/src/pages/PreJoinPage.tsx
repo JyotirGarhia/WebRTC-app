@@ -103,10 +103,10 @@ const PreJoinPage = () => {
     };
 
     return (
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-auto mx-10 flex-wrap">
             <div className="preview-container flex flex-col items-center p-10 gap-4">
                 <label className="text-2xl font-bold">Preview</label>
-                <div className="preview-video max-w-sm">
+                <div className="preview-video w-sm">
                     <video ref={videoElementRef}
                         autoPlay playsInline muted
                         className="scale-x-[-1]"
