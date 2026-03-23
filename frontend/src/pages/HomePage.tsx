@@ -4,22 +4,35 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center gap-4 p-10">
-      <h1 className="text-2xl font-bold">Video Chat</h1>
+   <div className="flex flex-col items-center justify-start min-h-screen pt-24 gap-6">
 
-      <button className="px-4 py-2 bg-blue-500 text-white rounded-md"
-        onClick={() => navigate("/prejoin?mode=create")}
-      >
-        Create Room
-      </button>
+  <h1 className="text-4xl font-bold">WebRTC Meet</h1>
 
-      <button
-        className="px-4 py-2 bg-green-500 text-white rounded"
-        onClick={() => navigate(`/prejoin?mode=join`)}
-      >
-        Join Room
-      </button>
-    </div>
+  <p className="text-gray-400 text-center max-w-md">
+    Fast, secure peer-to-peer video calls. No login required.
+  </p>
+
+  <div className="flex gap-4 mt-4">
+    <button
+      className="px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 hover:scale-105 active:scale-95 transition duration-200"
+      onClick={() => navigate("/prejoin?mode=create")}
+    >
+      🎥 Create Room
+    </button>
+
+    <button
+      className="px-6 py-3 bg-green-500 text-white rounded-xl hover:bg-green-600 hover:scale-105 active:scale-95 transition duration-200"
+      onClick={() => navigate("/prejoin?mode=join")}
+    >
+      🔗 Join Room
+    </button>
+  </div>
+
+  <p className="text-sm text-gray-400 text-center">
+    No account required • Works in browser • Secure connection
+  </p>
+
+</div>
   );
 };
 
